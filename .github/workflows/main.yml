@@ -5,7 +5,7 @@ on:
      -master
   pull_request:
     branches:
-      -master
+      -main
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -15,9 +15,9 @@ jobs:
     uses: actions/checkout@v2
         
     -name: Set up Python
-    uses: actions/setup-python@v2
-    with: python-version: 3.9
+      uses: actions/setup-python@v2
+      with: python-version: 3.9
         
     -name: Run tests
-    run: python [plik testowy].py
+      run: python [plik testowy].py
         
